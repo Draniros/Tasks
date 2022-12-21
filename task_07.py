@@ -48,5 +48,4 @@ def combine_anagrams(word_list):
 
     return finish_list
 
-t = Tasks
-print(t.combine_anagrams(list))
+print(combine_anagrams(list))
