@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timedelta
 
-def __date_in_future__(uday):
+def date_in_future(uday):
 
     today = datetime.now()
     try:
@@ -13,6 +13,5 @@ def __date_in_future__(uday):
 print("This programm see future")
 print("If you write non-integers programm do erorr")
 usr = input("Input days: ")
-t = Task
-print(t.__date_in_future__(usr))
+print(date_in_future(usr))
 
