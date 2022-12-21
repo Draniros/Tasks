@@ -29,5 +29,4 @@ def is_palindrome(string):
 
 print("This is a program for searching for palindromes without taking into account case and some characters.")
 strin = input("Insert string: ")
-t = Task
-print(t.is_palindrome(strin))
+print(is_palindrome(strin))
