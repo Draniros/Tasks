@@ -14,9 +14,9 @@ def coincidence(ulist = [],urange = []):
                     llist.append(i)
         llist.sort()
         return llist
-T = Task
+    
 lst = [5.65,7,7.2,9,4,2,20,8]
-print(T.coincidence([1, 2, 3, 4, 5], range(3, 6)))
-print(T.coincidence())
-print(T.coincidence([None, 1, 'foo', 4, 2, 2.5], range(1, 4)))
-print(T.coincidence(lst,range(4,8)))
+print(coincidence([1, 2, 3, 4, 5], range(3, 6)))
+print(coincidence())
+print(coincidence([None, 1, 'foo', 4, 2, 2.5], range(1, 4)))
+print(coincidence(lst,range(4,8)))
