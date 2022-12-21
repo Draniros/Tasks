@@ -15,9 +15,8 @@ def max_odd(array):
     else:
         return maxs
 
-t = Task
-print(t.max_odd([7, 'ololol', None, 9.00, 3, 22]))
-print(t.max_odd(['ololol', 2,4]))
-print(t.max_odd([1, 2, 3, 4, 4]))
-print(t.max_odd(['ololo', 'fufufu'])
-print(t.max_odd(['ololo', 2, 3, 4, [1, 2], None])
+print(max_odd([7, 'ololol', None, 9.00, 3, 22]))
+print(max_odd(['ololol', 2,4]))
+print(max_odd([1, 2, 3, 4, 4]))
+print(max_odd(['ololo', 'fufufu'])
+print(max_odd(['ololo', 2, 3, 4, [1, 2], None])
