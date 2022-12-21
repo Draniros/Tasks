@@ -1,32 +1,30 @@
 from string import ascii_letters
-class Task:
 
-    def multiply_numbers(inp = None):
+def multiply_numbers(inp = None):
 
-        acnum = "1234567890"
-        product = 1
-        if isinstance(inp, (list)):
-            x = ''
-            for n in range(0,len(inp)):
-                x += str(inp[n])
-            inp = x
+    acnum = "1234567890"
+    product = 1
+    if isinstance(inp, (list)):
+        x = ''
+        for n in range(0,len(inp)):
+            x += str(inp[n])
+        inp = x
 
-        if isinstance(inp, (float)):
-            inp = str(inp)
+    if isinstance(inp, (float)):
+        inp = str(inp)
 
-        if isinstance(inp, (int,str)):
-            if(len(inp.strip(ascii_letters)) == 0):
-                return None
-            else:
-                for i in inp:
-                    if len(i.strip(acnum)) == 0:
-                        product *= int(i)
-
-                return product
-        else:
+    if isinstance(inp, (int,str)):
+        if(len(inp.strip(ascii_letters)) == 0):
             return None
+        else:
+            for i in inp:
+                if len(i.strip(acnum)) == 0:
+                    product *= int(i)
 
-t = Task
+            return product
+    else:
+        return None
+
 
 print(t.multiply_numbers()) # => None
 print(t.multiply_numbers('ss')) # => None
